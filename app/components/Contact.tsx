@@ -29,7 +29,7 @@ const Contact = () => {
           variants={fadeInUpVariant}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-text">Get In Touch</h2>
-          <div className="w-32 h-1 bg-primary mx-auto"></div>
+          <div className="w-32 h-1 bg-blue-500 mx-auto"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -45,28 +45,28 @@ const Contact = () => {
             
             <div className="space-y-8">
               <div className="flex items-center">
-                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mr-6 animate-glow">
-                  <FaEnvelope className="text-primary text-2xl" />
+                <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center mr-6 animate-glow">
+                  <FaEnvelope className="text-blue-500 text-2xl" />
                 </div>
                 <div>
                   <h4 className="font-medium text-light/90 text-lg mb-1">Email</h4>
-                  <a href="mailto:abdul.hannan7474@gmail.com" className="text-primary hover:underline text-xl">abdul.hannan7474@gmail.com</a>
+                  <a href="mailto:abdul.hannan7474@gmail.com" className="text-blue-500 hover:underline text-xl">abdul.hannan7474@gmail.com</a>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mr-6 animate-glow">
-                  <FaPhone className="text-primary text-2xl" />
+                <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center mr-6 animate-glow">
+                  <FaPhone className="text-blue-500 text-2xl" />
                 </div>
                 <div>
                   <h4 className="font-medium text-light/90 text-lg mb-1">Phone</h4>
-                  <a href="tel:+16475717548" className="text-primary hover:underline text-xl">(+1) 647-571-7548</a>
+                  <a href="tel:+16475717548" className="text-blue-500 hover:underline text-xl">(+1) 647-571-7548</a>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mr-6 animate-glow">
-                  <FaMapMarkerAlt className="text-primary text-2xl" />
+                <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center mr-6 animate-glow">
+                  <FaMapMarkerAlt className="text-blue-500 text-2xl" />
                 </div>
                 <div>
                   <h4 className="font-medium text-light/90 text-lg mb-1">Location</h4>
@@ -82,7 +82,7 @@ const Contact = () => {
                   href="https://github.com/huzaifa-ibrar"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary hover:bg-primary/30 transition-colors duration-300"
+                  className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-500 hover:bg-blue-500/30 transition-colors duration-300"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -92,7 +92,7 @@ const Contact = () => {
                   href="https://linkedin.com/in/abdul-hannan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary hover:bg-primary/30 transition-colors duration-300"
+                  className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-500 hover:bg-blue-500/30 transition-colors duration-300"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -109,7 +109,7 @@ const Contact = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUpVariant}
           >
-            <div className="bg-dark/60 backdrop-blur-sm rounded-lg p-8 shadow-2xl border border-primary/20 hover:border-primary/50 transition-all duration-300 animate-glow">
+            <div className="bg-dark/60 backdrop-blur-sm rounded-lg p-8 shadow-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 animate-glow">
               <h3 className="text-3xl font-bold mb-8 text-light">Send Me a Message</h3>
               
               <form>
@@ -118,7 +118,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="name"
-                    className="w-full px-4 py-3 border border-primary/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary bg-dark/70 text-light text-lg"
+                    className="w-full px-4 py-3 border border-blue-500/30 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-dark/70 text-light text-lg"
                     placeholder="Your name"
                     required
                   />
@@ -129,7 +129,7 @@ const Contact = () => {
                   <input 
                     type="email" 
                     id="email"
-                    className="w-full px-4 py-3 border border-primary/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary bg-dark/70 text-light text-lg"
+                    className="w-full px-4 py-3 border border-blue-500/30 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-dark/70 text-light text-lg"
                     placeholder="Your email"
                     required
                   />
@@ -140,7 +140,7 @@ const Contact = () => {
                   <input 
                     type="text" 
                     id="subject"
-                    className="w-full px-4 py-3 border border-primary/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary bg-dark/70 text-light text-lg"
+                    className="w-full px-4 py-3 border border-blue-500/30 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-dark/70 text-light text-lg"
                     placeholder="Subject"
                     required
                   />
@@ -151,7 +151,7 @@ const Contact = () => {
                   <textarea 
                     id="message"
                     rows={5}
-                    className="w-full px-4 py-3 border border-primary/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary bg-dark/70 text-light text-lg"
+                    className="w-full px-4 py-3 border border-blue-500/30 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-dark/70 text-light text-lg"
                     placeholder="Your message"
                     required
                   ></textarea>
@@ -159,7 +159,7 @@ const Contact = () => {
                 
                 <motion.button
                   type="submit"
-                  className="w-full py-4 px-6 text-xl text-light bg-primary rounded-lg hover:bg-primary/90 focus:ring-4 focus:ring-primary/50 transition-colors duration-300 animate-glow"
+                  className="w-full py-4 px-6 text-xl text-light bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:ring-blue-500/50 transition-colors duration-300 animate-glow"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="text-2xl font-bold"
           >
-            <span className="text-primary">Atif</span><span className="text-light">.Khan</span>
+            <span className="text-blue-500">Abdul</span><span className="text-light">.Hannan</span>
           </motion.a>
 
           {/* Desktop Menu */}

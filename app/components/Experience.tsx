@@ -11,7 +11,7 @@ const Experience = () => {
       position: "Cyber Security Risk Analyst - Virtual Internship",
       location: "Toronto, CA",
       period: "July 2024 - August 2024",
-      color: "from-primary to-teal-400",
+      color: "from-blue-500 to-blue-400",
       achievements: [
         "Performed a comprehensive vulnerability assessment on a simulated corporate network, identifying 15+ critical security gaps and potential attack vectors, reducing risk exposure by 30%.",
         "Analyzed risk levels for 50+ vulnerabilities, prioritizing remediation efforts that mitigated high-risk threats by 40% and ensured compliance with NIST and ISO 27001 standards.",
@@ -24,7 +24,7 @@ const Experience = () => {
       position: "Customer Service Representative",
       location: "Toronto, CA",
       period: "July 2022 - Present",
-      color: "from-teal-500 to-teal-400",
+      color: "from-blue-600 to-blue-400",
       achievements: [
         "Verified 100+ customer credentials and rental agreements daily, ensuring 100% compliance with company policies and legal requirements.",
         "Assisted 50+ customers daily with rental reservations, vehicle selection, and billing inquiries, achieving a 95% customer satisfaction rate.",
@@ -36,7 +36,7 @@ const Experience = () => {
       position: "Administrative Assistant",
       location: "Toronto, CA",
       period: "February 2020 - August 2021",
-      color: "from-teal-400 to-teal-300",
+      color: "from-blue-400 to-blue-300",
       achievements: [
         "Managed inventory for 500+ products, optimizing stock levels and reducing shortages by 25%.",
         "Processed payroll for 15+ employees, ensuring 100% accuracy in wage calculations and timely disbursement.",
@@ -125,8 +125,8 @@ const Experience = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-300">Experience</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-primary to-teal-300 mx-auto"></div>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-300">Experience</h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-300 mx-auto"></div>
         </motion.div>
 
         <motion.div 

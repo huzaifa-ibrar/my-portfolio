@@ -112,8 +112,8 @@ const About = () => {
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUpVariant}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 glow-text bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-300">About Me</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-primary to-teal-300 mx-auto"></div>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 glow-text bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-300">About Me</h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-300 mx-auto"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -132,7 +132,7 @@ const About = () => {
                 transition: { duration: 0.3 }
               }}
             >
-              <div className="p-1 bg-gradient-to-r from-primary via-teal-400 to-primary"></div>
+              <div className="p-1 bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500"></div>
               <div className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mr-4">
@@ -224,7 +224,7 @@ const About = () => {
             variants={fadeInUpVariant}
           >
             <div className="bg-dark/60 backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl border border-primary/20 hover:border-primary/50 transition-all duration-500 h-full">
-              <div className="p-1 bg-gradient-to-r from-primary via-teal-400 to-primary"></div>
+              <div className="p-1 bg-gradient-to-r from-blue-500 via-blue-400 to-blue-500"></div>
               <div className="p-8">
                 <div className="flex items-center mb-8">
                   <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mr-4">

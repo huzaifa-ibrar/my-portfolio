@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#DC2626', // Red-600
-        secondary: '#7F1D1D', // Red-900
+        primary: '#2563EB', // Blue-600
+        secondary: '#1E40AF', // Blue-800
         dark: '#171717', // Nearly black - neutral-900
         light: '#F8FAFC', // Light color for contrast
-        accent: '#991B1B', // Darker red for accents
+        accent: '#1E3A8A', // Darker blue for accents
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
@@ -32,8 +32,8 @@ module.exports = {
           '50%': { transform: 'translateY(-5px) scale(1.03)' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 5px rgba(220, 38, 38, 0.5)' },
-          '100%': { boxShadow: '0 0 20px rgba(220, 38, 38, 0.8)' },
+          '0%': { boxShadow: '0 0 5px rgba(37, 99, 235, 0.5)' },
+          '100%': { boxShadow: '0 0 20px rgba(37, 99, 235, 0.8)' },
         },
       },
     },
