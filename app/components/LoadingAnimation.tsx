@@ -21,7 +21,7 @@ const LoadingAnimation = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           style={{
-            textShadow: '0 0 10px rgba(220, 38, 38, 0.7), 0 0 20px rgba(220, 38, 38, 0.5)'
+            textShadow: '0 0 10px rgba(40, 215, 156, 0.7), 0 0 20px rgba(40, 215, 156, 0.5)'
           }}
         >
           <motion.span
@@ -38,7 +38,7 @@ const LoadingAnimation = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            t
+            b
           </motion.span>
           <motion.span
             className="inline-block"
@@ -46,7 +46,7 @@ const LoadingAnimation = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            i
+            d
           </motion.span>
           <motion.span
             className="inline-block"
@@ -54,23 +54,23 @@ const LoadingAnimation = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            f
-          </motion.span>
-          <motion.span
-            className="inline-block ml-3"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
-          >
-            K
+            u
           </motion.span>
           <motion.span
             className="inline-block"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.0 }}
+          >
+            l
+          </motion.span>
+          <motion.span
+            className="inline-block ml-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            h
+            H
           </motion.span>
           <motion.span
             className="inline-block"
@@ -85,6 +85,30 @@ const LoadingAnimation = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.6 }}
+          >
+            n
+          </motion.span>
+          <motion.span
+            className="inline-block"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1.8 }}
+          >
+            n
+          </motion.span>
+          <motion.span
+            className="inline-block"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 2.0 }}
+          >
+            a
+          </motion.span>
+          <motion.span
+            className="inline-block"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 2.2 }}
           >
             n
           </motion.span>

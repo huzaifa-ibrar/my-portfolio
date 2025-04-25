@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-light/90 text-lg mb-1">Email</h4>
-                  <a href="mailto:atifkhan308@icloud.com" className="text-primary hover:underline text-xl">atifkhan308@icloud.com</a>
+                  <a href="mailto:abdul.hannan7474@gmail.com" className="text-primary hover:underline text-xl">abdul.hannan7474@gmail.com</a>
                 </div>
               </div>
               
@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-light/90 text-lg mb-1">Phone</h4>
-                  <a href="tel:+16477853360" className="text-primary hover:underline text-xl">(+1) 647-785-3360</a>
+                  <a href="tel:+16475717548" className="text-primary hover:underline text-xl">(+1) 647-571-7548</a>
                 </div>
               </div>
               
@@ -79,7 +79,7 @@ const Contact = () => {
               <h4 className="font-bold mb-5 text-xl text-light">Connect with me:</h4>
               <div className="flex space-x-6">
                 <motion.a 
-                  href="https://github.com/Princ3k"
+                  href="https://github.com/huzaifa-ibrar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary hover:bg-primary/30 transition-colors duration-300"
@@ -89,7 +89,7 @@ const Contact = () => {
                   <FaGithub className="w-7 h-7" />
                 </motion.a>
                 <motion.a 
-                  href="https://linkedin.com/in/atif-khan3"
+                  href="https://linkedin.com/in/abdul-hannan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary hover:bg-primary/30 transition-colors duration-300"
