@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-10 md:mb-0 text-center md:text-left">
             <h3 className="text-2xl font-bold mb-3">
-              <span className="text-primary text-3xl">Atif</span> <span className="text-light text-3xl">Khan</span>
+              <span className="text-primary text-3xl">Abdul</span> <span className="text-light text-3xl">Hannan</span>
             </h3>
             <p className="text-light/70 max-w-md text-lg">
               Software Developer specializing in ADAS testing, DevSecOps, cloud architecture, and data engineering
@@ -44,7 +44,7 @@ const Footer = () => {
               <FaLinkedin className="w-8 h-8" />
             </a>
             <a
-              href="mailto:atifkhan308@icloud.com"
+              href="mailto:abdul.hannan7474@gmail.com"
               className="text-light/70 hover:text-primary transition-colors duration-300"
               aria-label="Email"
             >
@@ -53,10 +53,35 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-primary/10 text-center">
-          <p className="text-light/60 text-lg">
-            &copy; {currentYear} Atif Khan. All rights reserved.
-          </p>
+        {/* Contact Information */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold text-light mb-6">Contact Me</h3>
+          <div className="flex items-center">
+            <FaEnvelope className="text-primary mr-3" />
+            <a 
+              href="mailto:abdul.hannan7474@gmail.com" 
+              className="text-light/80 hover:text-primary transition-colors"
+            >
+              abdul.hannan7474@gmail.com
+            </a>
+          </div>
+          <div className="flex items-center">
+            <FaPhone className="text-primary mr-3" />
+            <a 
+              href="tel:+16475717548" 
+              className="text-light/80 hover:text-primary transition-colors"
+            >
+              +1 (647) 571-7548
+            </a>
+          </div>
+          <div className="flex items-center">
+            <FaMapMarkerAlt className="text-primary mr-3" />
+            <span className="text-light/80">Toronto, Canada</span>
+          </div>
+        </div>
+        
+        <div className="mt-16 text-center text-light/60">
+          &copy; {currentYear} Abdul Hannan. All rights reserved.
         </div>
       </div>
     </footer>

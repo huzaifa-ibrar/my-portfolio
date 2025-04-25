@@ -1,10 +1,10 @@
 import '../styles/globals.css';
 import type { Metadata } from 'next';
-import React from 'react';
+import * as React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Atif Khan | Software Developer',
-  description: 'Atif Khan is a Software Developer specializing in ADAS testing, DevSecOps, cloud architecture, and data engineering.',
+  title: 'Abdul Hannan | IT Networking Security Specialist',
+  description: 'Abdul Hannan is an IT professional specializing in Network Security, DevSecOps, Cloud Security, and Penetration Testing.',
   keywords: ['Software Developer', 'DevOps Engineer', 'ADAS Test Engineer', 'Python', 'AWS', 'Jenkins', 'Kubernetes', 'CI/CD', 'DevSecOps'],
 };
 

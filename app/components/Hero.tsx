@@ -23,10 +23,10 @@ const Hero = () => {
   // List of roles to cycle through
   const roles = [
     'IT Networking Security',
-    'Cyber Security Risk Analyst',
-    'DevSecOps Specialist',
-    'Network Security Expert',
-    'Web Application Security'
+    'DevSecOps Engineer',
+    'Cloud Security Specialist',
+    'Cyber Security Analyst',
+    'Network Security Expert'
   ];
   
   // Colors to cycle through for roles
@@ -193,7 +193,7 @@ const Hero = () => {
               }}
               style={{
                 filter: `blur(${Math.random() > 0.8 ? "2px" : "0"})`,
-                boxShadow: `0 0 ${size * 2}px rgba(64, 224, 208, ${opacity})`,
+                boxShadow: `0 0 ${size * 2}px rgba(40, 215, 156, ${opacity})`,
               }}
               whileHover={{
                 scale: 2,
@@ -301,7 +301,7 @@ const Hero = () => {
               >
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-light mb-4"
                   style={{
-                    textShadow: '0 0 15px rgba(64, 224, 208, 0.6), 0 0 30px rgba(64, 224, 208, 0.4)'
+                    textShadow: '0 0 15px rgba(40, 215, 156, 0.6), 0 0 30px rgba(40, 215, 156, 0.4)'
                   }}>
                   {fullName}
                 </h1>
@@ -339,7 +339,7 @@ const Hero = () => {
                   <motion.span
                     className="flex items-center text-light"
                   >
-                    <span className="mr-2">📍</span> Toronto, Canada
+                    <span className="mr-2">📍</span> Canada
                   </motion.span>
                 </div>
                 <div className="flex mt-8 space-x-4">
@@ -353,6 +353,16 @@ const Hero = () => {
                   >
                     <FaLinkedin className="text-2xl" />
                   </motion.a>
+                  <motion.a
+                    href="https://github.com/Princ3k" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-primary/20 hover:bg-primary/30 text-primary rounded-full p-4 transition-all duration-300"
+                  >
+                    <FaGithub className="text-2xl" />
+                  </motion.a>
                 </div>
               </motion.div>
               <motion.button
@@ -362,7 +372,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="mt-10 px-8 py-4 text-lg bg-primary rounded-full text-light font-medium hover:bg-primary/90 transition-colors duration-300 shadow-[0_0_15px_rgba(64,224,208,0.5)]"
+                className="mt-10 px-8 py-4 text-lg bg-primary rounded-full text-light font-medium hover:bg-primary/90 transition-colors duration-300 shadow-[0_0_15px_rgba(40,215,156,0.5)]"
               >
                 View My Work
               </motion.button>
@@ -384,7 +394,7 @@ const Hero = () => {
                   </div>
                   
                   {/* Orbiting tech skills */}
-                  {["Python", "Azure", "Jenkins", "Docker", "Java", "C++", "DevSecOps", "SQL", "AWS", "Terraform"].map((skill, index) => {
+                  {["Python", "AWS", "Jenkins", "Docker", "Java", "C++", "DevOps", "CI/CD", "Cloud", "Terraform"].map((skill, index) => {
                     const angle = (index / 10) * Math.PI * 2;
                     const radius = 150;
                     const offsetX = Math.cos(angle) * radius;
@@ -439,7 +449,7 @@ const Hero = () => {
                         height: `${size}px`,
                         left: "50%",
                         top: "50%",
-                        boxShadow: `0 0 ${size * 2}px rgba(64, 224, 208, 0.7)`,
+                        boxShadow: `0 0 ${size * 2}px rgba(40, 215, 156, 0.7)`,
                       }}
                       animate={{
                         x: [x, x + 30, x - 10, x],

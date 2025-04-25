@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaClock, FaMapMarkerAlt, FaChevronRight, FaCheck, FaShieldAlt, FaUsers, FaBoxes } from 'react-icons/fa';
+import { FaBriefcase, FaClock, FaMapMarkerAlt, FaChevronRight, FaCheck } from 'react-icons/fa';
 
 const Experience = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -24,7 +24,7 @@ const Experience = () => {
       position: "Customer Service Representative",
       location: "Toronto, CA",
       period: "July 2022 - Present",
-      color: "from-teal-500 to-emerald-400",
+      color: "from-teal-500 to-teal-400",
       achievements: [
         "Verified 100+ customer credentials and rental agreements daily, ensuring 100% compliance with company policies and legal requirements.",
         "Assisted 50+ customers daily with rental reservations, vehicle selection, and billing inquiries, achieving a 95% customer satisfaction rate.",
@@ -36,7 +36,7 @@ const Experience = () => {
       position: "Administrative Assistant",
       location: "Toronto, CA",
       period: "February 2020 - August 2021",
-      color: "from-teal-400 to-emerald-300",
+      color: "from-teal-400 to-teal-300",
       achievements: [
         "Managed inventory for 500+ products, optimizing stock levels and reducing shortages by 25%.",
         "Processed payroll for 15+ employees, ensuring 100% accuracy in wage calculations and timely disbursement.",
@@ -69,7 +69,7 @@ const Experience = () => {
     },
     expanded: {
       scale: 1.02,
-      boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(64, 224, 208, 0.3)",
+      boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(220, 38, 38, 0.3)",
       transition: { 
         type: "spring", 
         stiffness: 300, 
@@ -95,16 +95,6 @@ const Experience = () => {
     hover: { scale: 1.1, rotate: 10 }
   };
 
-  const getJobIcon = (position) => {
-    if (position.includes("Cyber") || position.includes("Security")) {
-      return <FaShieldAlt className="text-primary text-xl" />;
-    } else if (position.includes("Customer")) {
-      return <FaUsers className="text-primary text-xl" />;
-    } else {
-      return <FaBoxes className="text-primary text-xl" />;
-    }
-  };
-
   return (
     <section id="experience" className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-b from-dark to-black">
       {/* Animated background elements */}
@@ -113,11 +103,11 @@ const Experience = () => {
           <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
             <defs>
               <radialGradient id="expGlow1" cx="30%" cy="30%" r="70%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="rgba(64, 224, 208, 0.15)" />
+                <stop offset="0%" stopColor="rgba(220, 38, 38, 0.15)" />
                 <stop offset="100%" stopColor="rgba(0, 0, 0, 0)" />
               </radialGradient>
               <radialGradient id="expGlow2" cx="70%" cy="70%" r="70%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="rgba(64, 224, 208, 0.1)" />
+                <stop offset="0%" stopColor="rgba(220, 38, 38, 0.1)" />
                 <stop offset="100%" stopColor="rgba(0, 0, 0, 0)" />
               </radialGradient>
             </defs>
@@ -172,7 +162,7 @@ const Experience = () => {
                         initial="normal"
                         whileHover="hover"
                       >
-                        {getJobIcon(exp.position)}
+                        <FaBriefcase className="text-primary text-xl" />
                       </motion.div>
                       <div>
                         <h3 className="text-2xl font-bold text-light">{exp.position}</h3>
