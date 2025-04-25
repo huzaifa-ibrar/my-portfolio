@@ -6,8 +6,8 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 10, 10, 10;
-  --primary: 220, 38, 38; /* red-600 */
-  --accent: 249, 115, 22; /* orange-500 */
+  --primary: 64, 224, 208; /* Green turquoise #40E0D0 */
+  --accent: 64, 224, 208; /* Green turquoise lighter */
   --secondary: 79, 70, 229; /* indigo-600 */
   --dark: 15, 15, 15;
   --light: 241, 245, 249; /* slate-100 */
@@ -106,7 +106,7 @@ a {
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-red-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-300;
   }
   
   .bg-gradient-radial {

@@ -18,24 +18,24 @@ const Hero = () => {
   const particlesRef = useRef<HTMLDivElement | null>(null);
   
   // Full name for animation
-  const fullName = "Atif Khan";
+  const fullName = "Abdul Hannan";
   
   // List of roles to cycle through
   const roles = [
-    'Software Developer',
-    'DevOps Engineer',
-    'Cloud Engineer',
-    'ADAS Test Engineer',
-    'Python Developer'
+    'IT Networking Security',
+    'Cyber Security Risk Analyst',
+    'DevSecOps Specialist',
+    'Network Security Expert',
+    'Web Application Security'
   ];
   
   // Colors to cycle through for roles
   const colors = [
     'text-primary',
-    'text-red-400',
-    'text-red-300',
-    'text-rose-400',
-    'text-red-500'
+    'text-teal-400',
+    'text-teal-300',
+    'text-teal-500',
+    'text-emerald-400'
   ];
 
   // Track mouse movement for interactive particles
@@ -193,7 +193,7 @@ const Hero = () => {
               }}
               style={{
                 filter: `blur(${Math.random() > 0.8 ? "2px" : "0"})`,
-                boxShadow: `0 0 ${size * 2}px rgba(220, 38, 38, ${opacity})`,
+                boxShadow: `0 0 ${size * 2}px rgba(64, 224, 208, ${opacity})`,
               }}
               whileHover={{
                 scale: 2,
@@ -301,7 +301,7 @@ const Hero = () => {
               >
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-light mb-4"
                   style={{
-                    textShadow: '0 0 15px rgba(220, 38, 38, 0.6), 0 0 30px rgba(220, 38, 38, 0.4)'
+                    textShadow: '0 0 15px rgba(64, 224, 208, 0.6), 0 0 30px rgba(64, 224, 208, 0.4)'
                   }}>
                   {fullName}
                 </h1>
@@ -313,38 +313,38 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center mt-10 space-x-4 text-lg">
                   <motion.a
-                    href="mailto:atifkhan308@icloud.com" 
+                    href="mailto:abdul.hannan7474@gmail.com" 
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center text-light hover:text-primary transition-colors"
                   >
-                    <FaEnvelope className="mr-2" /> atifkhan308@icloud.com
+                    <FaEnvelope className="mr-2" /> abdul.hannan7474@gmail.com
                   </motion.a>
                 </div>
                 <div className="flex items-center mt-4 space-x-4 text-lg">
                   <motion.a
-                    href="tel:+16477853360" 
+                    href="tel:+16475717548" 
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center text-light hover:text-primary transition-colors"
                   >
-                    <FaPhone className="mr-2" /> +1(647)785-3360
+                    <FaPhone className="mr-2" /> +1(647)571-7548
                   </motion.a>
                 </div>
                 <div className="flex items-center mt-4 space-x-4 text-lg">
                   <motion.span
                     className="flex items-center text-light"
                   >
-                    <span className="mr-2">📍</span> Canada
+                    <span className="mr-2">📍</span> Toronto, Canada
                   </motion.span>
                 </div>
                 <div className="flex mt-8 space-x-4">
                   <motion.a
-                    href="https://linkedin.com/in/atif-khan3" 
+                    href="https://linkedin.com/in/abdul-hannan" 
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
@@ -352,16 +352,6 @@ const Hero = () => {
                     className="bg-primary/20 hover:bg-primary/30 text-primary rounded-full p-4 transition-all duration-300"
                   >
                     <FaLinkedin className="text-2xl" />
-                  </motion.a>
-                  <motion.a
-                    href="https://github.com/Princ3k" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="bg-primary/20 hover:bg-primary/30 text-primary rounded-full p-4 transition-all duration-300"
-                  >
-                    <FaGithub className="text-2xl" />
                   </motion.a>
                 </div>
               </motion.div>
@@ -372,7 +362,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="mt-10 px-8 py-4 text-lg bg-primary rounded-full text-light font-medium hover:bg-primary/90 transition-colors duration-300 shadow-[0_0_15px_rgba(220,38,38,0.5)]"
+                className="mt-10 px-8 py-4 text-lg bg-primary rounded-full text-light font-medium hover:bg-primary/90 transition-colors duration-300 shadow-[0_0_15px_rgba(64,224,208,0.5)]"
               >
                 View My Work
               </motion.button>
@@ -394,7 +384,7 @@ const Hero = () => {
                   </div>
                   
                   {/* Orbiting tech skills */}
-                  {["Python", "AWS", "Jenkins", "Docker", "Java", "C++", "DevOps", "CI/CD", "Cloud", "Terraform"].map((skill, index) => {
+                  {["Python", "Azure", "Jenkins", "Docker", "Java", "C++", "DevSecOps", "SQL", "AWS", "Terraform"].map((skill, index) => {
                     const angle = (index / 10) * Math.PI * 2;
                     const radius = 150;
                     const offsetX = Math.cos(angle) * radius;
@@ -449,7 +439,7 @@ const Hero = () => {
                         height: `${size}px`,
                         left: "50%",
                         top: "50%",
-                        boxShadow: `0 0 ${size * 2}px rgba(220, 38, 38, 0.7)`,
+                        boxShadow: `0 0 ${size * 2}px rgba(64, 224, 208, 0.7)`,
                       }}
                       animate={{
                         x: [x, x + 30, x - 10, x],

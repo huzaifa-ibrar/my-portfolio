@@ -1,55 +1,46 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaClock, FaMapMarkerAlt, FaChevronRight, FaCheck } from 'react-icons/fa';
+import { FaBriefcase, FaClock, FaMapMarkerAlt, FaChevronRight, FaCheck, FaShieldAlt, FaUsers, FaBoxes } from 'react-icons/fa';
 
 const Experience = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
   
   const experienceData = [
     {
-      company: "General Motors",
-      position: "Software Test Engineer Intern - ADAS",
+      company: "Forage",
+      position: "Cyber Security Risk Analyst - Virtual Internship",
       location: "Toronto, CA",
-      period: "Jan 2024 - Oct 2024",
-      color: "from-primary to-red-400",
+      period: "July 2024 - August 2024",
+      color: "from-primary to-teal-400",
       achievements: [
-        "Validated ADAS software, identifying and resolving critical design gaps early in the development cycle, which reduced recall and warranty costs by $1M annually.",
-        "Automated 60% of manual testing processes using Python and C++, decreasing testing time by 200 hours annually, improved overall software quality, and reduced critical issue detection time, saving $300,000 in maintenance costs.",
-        "Collaborated with Agile teams to improve the reliability of Cadillac's Super Cruise systems (Self-Driving) by 15%, and conducted training sessions to elevate team competencies in ADAS protocols."
+        "Performed a comprehensive vulnerability assessment on a simulated corporate network, identifying 15+ critical security gaps and potential attack vectors, reducing risk exposure by 30%.",
+        "Analyzed risk levels for 50+ vulnerabilities, prioritizing remediation efforts that mitigated high-risk threats by 40% and ensured compliance with NIST and ISO 27001 standards.",
+        "Presented findings and recommendations to 10+ stakeholders, improving alignment with organizational security policies and reducing compliance violations by 25%.",
+        "Utilized SIEM tools to monitor 1,000+ network events daily, detecting and responding to 20+ anomalies in real-time, enhancing threat response efficiency by 35%."
       ]
     },
     {
-      company: "Intact Financial",
-      position: "Software Engineer Intern - DevSecOps",
+      company: "Enterprise Rent A Car",
+      position: "Customer Service Representative",
       location: "Toronto, CA",
-      period: "May 2023 - Jan 2024",
-      color: "from-red-500 to-rose-400",
+      period: "July 2022 - Present",
+      color: "from-teal-500 to-emerald-400",
       achievements: [
-        "Engineered and refined 26 Python, Java, and YAML-based CI/CD pipelines with Jenkins, OpenShift, and Kubernetes, boosting deployment frequency by 35% and slashing time-to-market by 20 days.",
-        "Integrated security automation tools (AWS, Synopsys Polaris) into DevOps workflows, lowering security risks by 25%, yielding annual savings of $500,000.",
-        "Led security documentation and testing strategies, improving cloud infrastructure resilience across multiple teams."
+        "Verified 100+ customer credentials and rental agreements daily, ensuring 100% compliance with company policies and legal requirements.",
+        "Assisted 50+ customers daily with rental reservations, vehicle selection, and billing inquiries, achieving a 95% customer satisfaction rate.",
+        "Coordinated with a team of 10+ members to manage inventory, schedule maintenance, and ensure 100% vehicle availability, reducing downtime by 20%."
       ]
     },
     {
-      company: "Porter Airlines",
-      position: "Airport Service Lead and HubCoordinator",
+      company: "JJ Garage Door Solutions",
+      position: "Administrative Assistant",
       location: "Toronto, CA",
-      period: "Jun 2023 - Nov 2024",
-      color: "from-red-400 to-rose-300",
+      period: "February 2020 - August 2021",
+      color: "from-teal-400 to-emerald-300",
       achievements: [
-        "Led operational improvements that increased on-time flight performance by 80% and reduced delays by 15 minutes per flight, contributing to $500K in annual revenue growth.",
-        "Managed over 30 daily flights, optimizing gate turnaround times and team coordination to cut operational costs by $300K annually.",
-      ]
-    },
-    {
-      company: "Enterprise Rent-A-Car",
-      position: "Senior Customer Service Representative",
-      location: "Toronto, CA",
-      period: "Jan 2022 - Dec 2022",
-      color: "from-rose-400 to-red-300",
-      achievements: [
-        "Delivered high-quality customer service, managing 50+ daily client interactions to ensure seamless rental experiences, reducing escalations by 30%.",
-        "Optimized fleet logistics and vehicle allocation, improving utilization by 15% and reducing customer wait times by 25%."
+        "Managed inventory for 500+ products, optimizing stock levels and reducing shortages by 25%.",
+        "Processed payroll for 15+ employees, ensuring 100% accuracy in wage calculations and timely disbursement.",
+        "Handled 200+ customer inquiries, improving retention by 30% through proactive follow-ups and issue resolution."
       ]
     }
   ];
@@ -78,7 +69,7 @@ const Experience = () => {
     },
     expanded: {
       scale: 1.02,
-      boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(220, 38, 38, 0.3)",
+      boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(64, 224, 208, 0.3)",
       transition: { 
         type: "spring", 
         stiffness: 300, 
@@ -104,6 +95,16 @@ const Experience = () => {
     hover: { scale: 1.1, rotate: 10 }
   };
 
+  const getJobIcon = (position) => {
+    if (position.includes("Cyber") || position.includes("Security")) {
+      return <FaShieldAlt className="text-primary text-xl" />;
+    } else if (position.includes("Customer")) {
+      return <FaUsers className="text-primary text-xl" />;
+    } else {
+      return <FaBoxes className="text-primary text-xl" />;
+    }
+  };
+
   return (
     <section id="experience" className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-b from-dark to-black">
       {/* Animated background elements */}
@@ -112,11 +113,11 @@ const Experience = () => {
           <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
             <defs>
               <radialGradient id="expGlow1" cx="30%" cy="30%" r="70%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="rgba(220, 38, 38, 0.15)" />
+                <stop offset="0%" stopColor="rgba(64, 224, 208, 0.15)" />
                 <stop offset="100%" stopColor="rgba(0, 0, 0, 0)" />
               </radialGradient>
               <radialGradient id="expGlow2" cx="70%" cy="70%" r="70%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="rgba(220, 38, 38, 0.1)" />
+                <stop offset="0%" stopColor="rgba(64, 224, 208, 0.1)" />
                 <stop offset="100%" stopColor="rgba(0, 0, 0, 0)" />
               </radialGradient>
             </defs>
@@ -134,8 +135,8 @@ const Experience = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-red-300">Experience</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-primary to-red-300 mx-auto"></div>
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-teal-300">Experience</h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-primary to-teal-300 mx-auto"></div>
         </motion.div>
 
         <motion.div 
@@ -171,7 +172,7 @@ const Experience = () => {
                         initial="normal"
                         whileHover="hover"
                       >
-                        <FaBriefcase className="text-primary text-xl" />
+                        {getJobIcon(exp.position)}
                       </motion.div>
                       <div>
                         <h3 className="text-2xl font-bold text-light">{exp.position}</h3>
