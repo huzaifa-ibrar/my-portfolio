@@ -14,8 +14,8 @@ const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
   // References
-  const nextSectionRef = useRef<HTMLElement | null>(null);
-  const particlesRef = useRef<HTMLDivElement | null>(null);
+  const nextSectionRef = useRef(null);
+  const particlesRef = useRef(null);
   
   // Full name for animation
   const fullName = "Abdul Hannan";
