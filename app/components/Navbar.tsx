@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +49,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-40 px-6 py-4 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-40 px-6 py-4 transition-all duration-300 ${scrolled ? 'bg-dark/90 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <motion.a 
@@ -57,9 +57,9 @@ const Navbar = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-2xl font-bold"
+            className="text-2xl font-bold text-primary"
           >
-            <span className="text-blue-500">Abdul</span><span className="text-light">.Hannan</span>
+            Huzaifa<span className="text-white">.dev</span>
           </motion.a>
 
           {/* Desktop Menu */}
@@ -73,10 +73,9 @@ const Navbar = () => {
               <motion.li key={index} variants={itemVariants}>
                 <a
                   href={link.href}
-                  className="text-light hover:text-primary transition-colors duration-300 relative group"
+                  className="text-light hover:text-primary transition-colors duration-300"
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </motion.li>
             ))}
@@ -86,7 +85,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-light hover:text-primary transition-colors duration-300 focus:outline-none"
+              className="text-light focus:outline-none"
               aria-label="Toggle Menu"
             >
               {isOpen ? (
@@ -109,13 +108,13 @@ const Navbar = () => {
         }}
         transition={{ duration: 0.3 }}
       >
-        <div className="container mx-auto py-4 mt-2 bg-dark/90 backdrop-blur-md rounded-lg border border-primary/20">
-          <ul className="flex flex-col space-y-4 p-4">
+        <div className="container mx-auto py-4">
+          <ul className="flex flex-col space-y-4">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <a
                   href={link.href}
-                  className="block text-light hover:text-primary transition-colors duration-300 py-2"
+                  className="block text-light hover:text-primary transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}

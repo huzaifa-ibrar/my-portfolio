@@ -1,21 +1,21 @@
 import '../styles/globals.css';
 import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
+import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Abdul Hannan | IT Networking Security Specialist',
-  description: 'Abdul Hannan is an IT professional specializing in Network Security, DevSecOps, Cloud Security, and Penetration Testing.',
-  keywords: ['IT Networking Security', 'DevSecOps', 'Cloud Security', 'Penetration Testing', 'Network Security', 'Python', 'AWS', 'Azure'],
+  title: 'Huzaifa Ibrar | Software Engineer',
+  description: 'Huzaifa Ibrar is a Software Engineer with expertise in full-stack development, DevOps, and database management.',
+  keywords: ['Software Engineer', 'Full Stack Developer', 'DevOps Engineer', 'React', 'MongoDB', 'AWS', 'Docker', 'Kubernetes'],
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: ReactNode;
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="bg-black text-light">
+    <html lang="en">
+      <body>
         {children}
       </body>
     </html>
